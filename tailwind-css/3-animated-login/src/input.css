@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+body {
+            background-color: #050510;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .input-field {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #00D1FF;
+            box-shadow: 0 0 15px rgba(0, 209, 255, 0.3);
+            outline: none;
+        }
+
+        .floating-shape {
+            animation: spin-slow 20s linear infinite;
+        }
+
+        @keyframes spin-slow {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .glow-btn:hover {
+            box-shadow: 0 0 20px rgba(0, 209, 255, 0.6);
+            transform: translateY(-2px);
+        }
+}

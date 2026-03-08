@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Card</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-6 relative overflow-hidden text-white">
+
+    <!-- Animated Background Blobs -->
+    <div class="blob w-72 h-72 bg-purple-500 rounded-full top-10 left-10"></div>
+    <div class="blob w-96 h-96 bg-pink-500 rounded-full bottom-10 right-10" style="animation-delay: 2s;"></div>
+
+    <div
+        class="glass max-w-sm w-full rounded-3xl p-8 shadow-2xl relative z-10 hover:-translate-y-2 transition-transform duration-300">
+        <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-md">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 bg-white/20 rounded-full">PRO</span>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-2">Premium Tech</h2>
+        <p class="text-white/70 text-sm mb-6 leading-relaxed">Experience the ultimate glassmorphism interface blending
+            HTML, custom CSS, and Tailwind utilities seamlessly together.</p>
+
+        <div class="space-y-4">
+            <div class="flex items-center gap-4 p-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors">
+                <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-xl font-bold">
+                    1</div>
+                <div>
+                    <h4 class="font-semibold text-sm">Design Quality</h4>
+                    <p class="text-xs text-white/60">Pixel-perfect precision</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 p-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors">
+                <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-xl font-bold">
+                    2</div>
+                <div>
+                    <h4 class="font-semibold text-sm">Performance</h4>
+                    <p class="text-xs text-white/60">Blazing fast UI</p>
+                </div>
+            </div>
+        </div>
+
+        <button
+            class="w-full mt-8 bg-white text-indigo-900 font-bold py-3 px-4 rounded-xl hover:bg-indigo-50 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300 transform active:scale-95">
+            Upgrade Now
+        </button>
+    </div>
+
+</body>
+
+</html>

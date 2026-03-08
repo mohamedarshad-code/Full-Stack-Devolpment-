@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:glassmorphism": "npx tailwindcss -i ./1-glassmorphism-card/src/input.css -o ./1-glassmorphism-card/dist/output.css --config ./1-glassmorphism-card/tailwind.config.js",
+    "build:modern": "npx tailwindcss -i ./2-modern-pricing/src/input.css -o ./2-modern-pricing/dist/output.css --config ./2-modern-pricing/tailwind.config.js",
+    "build:animated": "npx tailwindcss -i ./3-animated-login/src/input.css -o ./3-animated-login/dist/output.css --config ./3-animated-login/tailwind.config.js",
+    "build:dashboard": "npx tailwindcss -i ./4-dashboard-widget/src/input.css -o ./4-dashboard-widget/dist/output.css --config ./4-dashboard-widget/tailwind.config.js",
+    "build:gradient": "npx tailwindcss -i ./5-gradient-landing/src/input.css -o ./5-gradient-landing/dist/output.css --config ./5-gradient-landing/tailwind.config.js",
+    "build:all": "npm run build:glassmorphism && npm run build:modern && npm run build:animated && npm run build:dashboard && npm run build:gradient"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

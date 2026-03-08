@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pricing Table</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen text-slate-200 py-20 px-4">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 glow-text">Choose Your Journey</h1>
+            <p class="text-slate-400 max-w-xl mx-auto text-lg">Scale your development workflow with our carefully
+                crafted plans designed for modern teams.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+            <!-- Basic Plan -->
+            <div
+                class="plan-card bg-slate-800/50 border border-slate-700/50 rounded-2xl p-8 backdrop-blur-sm flex flex-col">
+                <h3 class="text-slate-400 font-medium tracking-widest uppercase text-sm mb-4">Starter</h3>
+                <div class="mb-6"><span class="text-4xl font-bold text-white">$19</span><span
+                        class="text-slate-500">/mo</span></div>
+                <p class="text-slate-400 text-sm mb-8">Perfect for individuals starting their coding adventure.</p>
+
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-slate-300">Basic HTML/CSS Support</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-slate-300">5 Projects Limit</span></li>
+                </ul>
+                <button
+                    class="w-full py-3 rounded-lg bg-slate-700 hover:bg-slate-600 font-medium transition-colors text-white">Get
+                    Started</button>
+            </div>
+
+            <!-- Pro Plan (Highlighted) -->
+            <div
+                class="plan-card bg-gradient-to-b from-indigo-900/80 to-slate-800/80 border border-indigo-500/50 rounded-2xl p-8 backdrop-blur-sm shadow-2xl relative flex flex-col scale-105 md:-mt-4 md:mb-4 z-10">
+                <div
+                    class="absolute top-0 right-0 bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl uppercase tracking-wider">
+                    Most Popular</div>
+                <h3 class="text-indigo-300 font-medium tracking-widest uppercase text-sm mb-4">Full Stack Pro</h3>
+                <div class="mb-6"><span class="text-5xl font-bold text-white">$49</span><span
+                        class="text-slate-400">/mo</span></div>
+                <p class="text-slate-300 text-sm mb-8">Everything you need to master full-stack development.</p>
+
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-white">Advanced React & Vue</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-white">Unlimited Projects</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-white">24/7 Priority Support</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-white">API Integrations</span></li>
+                </ul>
+                <button
+                    class="w-full py-3 rounded-lg bg-indigo-500 hover:bg-indigo-400 font-bold transition-all shadow-[0_0_15px_rgba(99,102,241,0.5)] text-white">Upgrade
+                    to Pro</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div
+                class="plan-card bg-slate-800/50 border border-slate-700/50 rounded-2xl p-8 backdrop-blur-sm flex flex-col">
+                <h3 class="text-slate-400 font-medium tracking-widest uppercase text-sm mb-4">Enterprise</h3>
+                <div class="mb-6"><span class="text-4xl font-bold text-white">$99</span><span
+                        class="text-slate-500">/mo</span></div>
+                <p class="text-slate-400 text-sm mb-8">Dedicated solutions for serious agencies and teams.</p>
+
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-slate-300">Custom Architecture</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-slate-300">Dedicated Manager</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-indigo-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg><span class="text-slate-300">White-labeling</span></li>
+                </ul>
+                <button
+                    class="w-full py-3 rounded-lg bg-slate-700 hover:bg-slate-600 font-medium transition-colors text-white">Contact
+                    Sales</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

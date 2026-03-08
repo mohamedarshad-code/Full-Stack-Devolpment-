@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form</title>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#00D1FF',
+                        darker: '#0A0A1F'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex items-center justify-center relative overflow-hidden text-white">
+
+    <!-- Background decorations -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand opacity-20 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 opacity-20 rounded-full blur-[100px]"></div>
+    </div>
+
+    <div
+        class="w-full max-w-md bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl p-8 z-10 shadow-2xl relative">
+
+        <div class="text-center mb-10">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand/10 text-brand mb-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                    </path>
+                </svg>
+            </div>
+            <h2 class="text-3xl font-bold tracking-tight">Welcome Back</h2>
+            <p class="text-gray-400 mt-2 text-sm">Sign in to access your dashboard</p>
+        </div>
+
+        <form class="space-y-6">
+            <div>
+                <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <input type="email" class="input-field w-full pl-11 pr-4 py-3 rounded-lg text-white"
+                        placeholder="you@example.com">
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center justify-between mb-2">
+                    <label class="block text-sm font-medium text-gray-300">Password</label>
+                    <a href="#" class="text-xs text-brand hover:text-white transition-colors">Forgot password?</a>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <input type="password" class="input-field w-full pl-11 pr-4 py-3 rounded-lg text-white"
+                        placeholder="••••••••">
+                </div>
+            </div>
+
+            <div class="flex items-center">
+                <input type="checkbox" id="remember"
+                    class="w-4 h-4 rounded bg-darker border-gray-600 focus:ring-brand focus:ring-2 accent-brand">
+                <label for="remember" class="ml-2 block text-sm text-gray-400">Remember me for 30 days</label>
+            </div>
+
+            <button type="button"
+                class="glow-btn w-full bg-brand text-darker font-bold text-lg py-3 rounded-lg transition-all duration-300 flex justify-center items-center gap-2">
+                Sign In
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                </svg>
+            </button>
+        </form>
+
+        <p class="mt-8 text-center text-sm text-gray-400">
+            Don't have an account? <a href="#" class="font-medium text-brand hover:text-white transition-colors">Sign up
+                now</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

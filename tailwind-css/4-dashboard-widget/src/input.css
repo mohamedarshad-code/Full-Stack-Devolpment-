@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+body {
+            background-color: #f3f4f6;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .widget-shadow {
+            box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.08);
+        }
+
+        .bar-animate {
+            animation: growUp 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            transform-origin: bottom;
+            transform: scaleY(0);
+        }
+
+        @keyframes growUp {
+            to {
+                transform: scaleY(1);
+            }
+        }
+}
