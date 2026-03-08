@@ -1,8 +1,8 @@
-/** @type {{import('tailwindcss').Config}} */
-module.exports = {{
-  content: ["./index.html", "./src/**/*.{{js,css}}"],
-  theme: {{
-    extend: {{}},
-  }},
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./5-gradient-landing/index.html"],
+  theme: {
+    extend: {},
+  },
   plugins: [],
-}}
+}

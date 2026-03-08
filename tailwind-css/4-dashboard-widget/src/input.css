@@ -1,26 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
 
 @layer components {
-body {
-            background-color: #f3f4f6;
-            font-family: 'Poppins', sans-serif;
-        }
+    body {
+        background-color: #fcfcfd;
+        font-family: 'Spline Sans', sans-serif;
+    }
 
-        .widget-shadow {
-            box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.08);
-        }
+    .bar-animate {
+        animation: growUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        transform-origin: bottom;
+        transform: scaleY(0);
+    }
 
-        .bar-animate {
-            animation: growUp 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-            transform-origin: bottom;
-            transform: scaleY(0);
+    @keyframes growUp {
+        to {
+            transform: scaleY(1);
         }
+    }
 
-        @keyframes growUp {
-            to {
-                transform: scaleY(1);
-            }
-        }
+    /* Smooth scroll interaction */
+    .scroll-reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .scroll-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

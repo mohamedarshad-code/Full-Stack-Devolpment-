@@ -1,37 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
 
 @layer components {
-body {
-            background-color: #050510;
-            font-family: 'Roboto', sans-serif;
-        }
+    body {
+        background-color: #030712;
+        font-family: 'Roboto Flex', sans-serif;
+    }
 
-        .input-field {
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
+    .input-field {
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-        .input-field:focus {
-            border-color: #00D1FF;
-            box-shadow: 0 0 15px rgba(0, 209, 255, 0.3);
-            outline: none;
-        }
+    .input-field:focus {
+        box-shadow: 0 0 40px rgba(34, 211, 238, 0.1);
+        transform: translateY(-2px);
+    }
 
-        .floating-shape {
-            animation: spin-slow 20s linear infinite;
-        }
+    .glow-btn:hover {
+        box-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
+    }
 
-        @keyframes spin-slow {
-            100% {
-                transform: rotate(360deg);
-            }
+    @keyframes spin-slow {
+        to {
+            transform: rotate(360deg);
         }
-
-        .glow-btn:hover {
-            box-shadow: 0 0 20px rgba(0, 209, 255, 0.6);
-            transform: translateY(-2px);
-        }
+    }
 }
